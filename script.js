@@ -7,7 +7,7 @@ let matriculado6 = document.getElementsByClassName('matriculado')[5]
 let matriculado7 = document.getElementsByClassName('matriculado')[6]
 let matriculado8 = document.getElementsByClassName('matriculado')[7]
 let matriculado9 = document.getElementsByClassName('matriculado')[8]
-let aluno = ['GABRIEL DA SILVA SANTOS', 'PEDRO HENRIQUE PEREIRA', 'MARCOS AUGUSTO DA SILVA', 'BRUNA ALERGIA SILVA', 'THIAGO DA SILVA DE BRITO', 'LUCAS AFONSO PEREIRA', 'ARLINDO OLIVEIRA DE BASTOS', 'DANIEL DE SOUSA', 'CAMILA BIANCA DE SOUSA SILVA']
+let aluno = ['Aluno 1', 'Aluno 2', 'Aluno 3', 'Aluno 4', 'Aluno 5', 'Aluno 6', 'Aluno 7', 'aluno 8', 'Aluno 9']
 function criar(){
     matriculado1.innerHTML = `${aluno[0]}<input type="checkbox" name="pres">`
     matriculado2.innerHTML = `${aluno[1]}<input type="checkbox" name="pres">`
