@@ -9,53 +9,25 @@
     <link rel="script" href="https://ggabriel-ss.github.io/eee/script.js">
     
 </head>
-<body onload="criar()">
+<body onload="inicio()">
     <header>
         <h1>CHAMADA</h1>
     </header>
-    <section>
-        <div id="alunos">
-            <div class="aluno">
-                <p class="matriculado"></p>
-                <p>Biblia: <input type="checkbox"  class="bib"> Revista: <input type="checkbox" class="rev"></p>
-            </div>
-            <div class="aluno">
-                <p class="matriculado"></p>
-                <p>Biblia: <input type="checkbox"  class="bib"> Revista: <input type="checkbox" class="rev"></p>
-            </div>
-            <div class="aluno">
-                <p class="matriculado"></p>
-                <p>Biblia: <input type="checkbox"  class="bib"> Revista: <input type="checkbox" class="rev"></p>
-            </div>
-            <div class="aluno">
-                <p class="matriculado"></p>
-                <p>Biblia: <input type="checkbox"  class="bib"> Revista: <input type="checkbox" class="rev"></p>
-            </div>
-            <div class="aluno">
-                <p class="matriculado"></p>
-                <p>Biblia: <input type="checkbox"  class="bib"> Revista: <input type="checkbox" class="rev"></p>
-            </div>
-            <div class="aluno">
-                <p class="matriculado"></p>
-                <p>Biblia: <input type="checkbox"  class="bib"> Revista: <input type="checkbox" class="rev"></p>
-            </div>
-            <div class="aluno">
-                <p class="matriculado"></p>
-                <p>Biblia: <input type="checkbox"  class="bib"> Revista: <input type="checkbox" class="rev"></p>
-            </div>
-            <div class="aluno">
-                <p class="matriculado"></p>
-                <p>Biblia: <input type="checkbox"  class="bib"> Revista: <input type="checkbox" class="rev"></p>
-            </div>
-            <div class="aluno">
-                <p class="matriculado"></p>
-                <p>Biblia: <input type="checkbox"  class="bib"> Revista: <input type="checkbox" class="rev"></p>
-            </div>
+    <section id="inic">
+    <div id="turmas">
+            <p class="p">SELECIONE A TURMA </p>
+            <p class="p" onclick="adolescentes()">AD</p>
+            <p class="p" onclick="crianças()">CR</p>
+            <p class="p" onclick="jovens()">JO</p>
+            <p class="p" onclick="mulheres()">MU</p>
+            <p class="p" onclick="homens()">HO</p>
         </div>
-        <input type="button" value="COMPUTAR" onclick="comp()">
+    </section>
+    <section id="seg">
+        <div id="alunos"> 
+        </div>  
     </section>
     <div id="res"></div>
     <footer>Desenvolvido por Gabriel S.Santos</footer>
-    <script src="script.js"></script>
 </body>
 </html>
