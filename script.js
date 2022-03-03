@@ -1,26 +1,57 @@
-let matriculado1 = document.getElementsByClassName('matriculado')[0]
-let matriculado2 = document.getElementsByClassName('matriculado')[1]
-let matriculado3 = document.getElementsByClassName('matriculado')[2]
-let matriculado4 = document.getElementsByClassName('matriculado')[3]
-let matriculado5 = document.getElementsByClassName('matriculado')[4]
-let matriculado6 = document.getElementsByClassName('matriculado')[5]
-let matriculado7 = document.getElementsByClassName('matriculado')[6]
-let matriculado8 = document.getElementsByClassName('matriculado')[7]
-let matriculado9 = document.getElementsByClassName('matriculado')[8]
-let aluno = ['Aluno 1', 'Aluno 2', 'Aluno 3', 'Aluno 4', 'Aluno 5', 'Aluno 6', 'Aluno 7', 'aluno 8', 'Aluno 9']
-function criar(){
-    matriculado1.innerHTML = `${aluno[0]}<input type="checkbox" name="pres">`
-    matriculado2.innerHTML = `${aluno[1]}<input type="checkbox" name="pres">`
-    matriculado3.innerHTML = `${aluno[2]}<input type="checkbox" name="pres">`
-    matriculado4.innerHTML = `${aluno[3]}<input type="checkbox" name="pres">`
-    matriculado5.innerHTML = `${aluno[4]}<input type="checkbox" name="pres">`
-    matriculado6.innerHTML = `${aluno[5]}<input type="checkbox" name="pres">`
-    matriculado7.innerHTML = `${aluno[6]}<input type="checkbox" name="pres">`
-    matriculado8.innerHTML = `${aluno[7]}<input type="checkbox" name="pres">`
-    matriculado9.innerHTML = `${aluno[8]}<input type="checkbox" name="pres">`
+let aluno = []
+function adolescentes(){
+    aluno = ['aluno1','aluno2']
+    criar()
 }
-
+function crianças(){
+    aluno = ['aluno1','aluno2']
+    criar()
+}
+function jovens(){
+    aluno = ['aluno1','aluno2']
+    criar()
+}
+function mulheres(){
+    aluno = ['aluno1','aluno2']
+    criar()
+}
+function homens(){
+    aluno = ['aluno1','aluno2']
+    criar()
+}
+function criar(){
+    let turmas = document.getElementById('inic')
+    turmas.innerHTML = ``
+    let alun = document.getElementById('alunos')
+    for(i = 0; i < aluno.length; i++){
+    alun.innerHTML += `<div class="aluno">
+                <p class="matriculado">${aluno[i]}<input type="checkbox" name="pres"></p>
+                <p>Biblia: <input type="checkbox"  class="bib"> Revista: <input type="checkbox" class="rev"></p>
+            </div>`
+    }
+    alun.innerHTML += `<div id="visitant"> 
+    <p>Visitantes: <input type="number" id="visit"></p><input type="button" value="COMPUTAR" id="computar" onclick="comp()"> 
+</div>`
+alun.innerHTML +=`<input type="button" value="Voltar" id="computar" onclick="voltar()">`
+}
+function voltar(){
+    let turmas = document.getElementById('inic')
+    turmas.innerHTML = `<div id="turmas">
+    <p class="p">SELECIONE A TURMA </p>
+    <p class="p" onclick="adolescentes()">ADOLESCENTES</p>
+    <p class="p" onclick="crianças()">CR</p>
+    <p class="p" onclick="jovens()">JO</p>
+    <p class="p" onclick="mulheres()">MU</p>
+    <p class="p" onclick="homens()">HO</p>
+</div>`
+let seg = document.getElementById('seg')
+seg.innerHTML = `<div id="alunos"> 
+</div>`
+let res = document.getElementById('res')
+res.innerHTML = ``
+}
 function comp(){
+let n = Number(document.getElementById('visit').value)
 let res = document.getElementById('res')
 let b = document.getElementsByClassName('bib')
 let pres = document.getElementsByName('pres')
@@ -41,17 +72,17 @@ for(i = 0; i < aluno.length; i++){
      totr += 1
  }
 }   
-    res.innerHTML = `<p>PRESENTES: ${p.length}</p><select  id="selct" size="20"></select>
+let totass = p.length + n
+    res.innerHTML = `<p>PRESENTES: ${p.length}</p><div id="present" ></div>
     <p>MATRICULADOS: ${aluno.length}</p>
     <p>AUSENTES: ${aluno.length - p.length}  </p>
     <p>TOTAL DE BÍBLIAS: ${totb}</p>
     <p>TOTAL DE REVISTAS: ${totr} </p>
-    <p>VISITANTES: </p>
-    <p>TOTAL DE ASSISTÊNCIA: </p>`
-    let sel = document.getElementById('selct')
+    <p>VISITANTES: ${n} </p>
+    <p>TOTAL DE ASSISTÊNCIA: ${totass}</p>`
+    let sel = document.getElementById('present')
     for(i = 0; i < p.length; i++){
-    let pr = document.createElement('option')
-    pr.text = `${p[i]}`
-    selct.appendChild(pr) 
+    sel.innerHTML += `<p>${i+1} ${p[i]}</p>`
     }
 }
+
