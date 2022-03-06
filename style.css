@@ -57,7 +57,7 @@ div{
 }
 #res{
     margin-top: 10px; 
-    padding-left: 10px;
+    padding-left: 25px;
     box-shadow: 2px 2px 2px;
     border-radius: 10%;
     flex-direction: column;
@@ -70,7 +70,7 @@ div{
    display: block; 
    border: solid;
    padding-left: 10px;
-   width: 400px;
+   width: 100px;
    border-color: rgba(0, 0, 0, 0.534);
 }
 footer{
