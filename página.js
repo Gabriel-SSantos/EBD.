@@ -8,7 +8,7 @@ function crianças(){
     criar()
 }
 function jovens(){
-    aluno = ['aluno1','aluno2']
+    aluno = ['Matheus','Fátima', 'Lucas','Luan','Jefferson','Felipe','Vinicius','Stella','Carmen','Wingryd','Karine','Letícia','Samuel','Fernanda','Alana','Daniele','P',]
     criar()
 }
 function mulheres(){
