@@ -19,9 +19,6 @@ function homens(){
     aluno = ['aluno1','aluno2']
     criar()
 }
-function inic(){
-jovens();
-}
 let turmas = document.getElementById('inic')
     turmas.innerHTML = ``
     let alun = document.getElementById('alunos')
