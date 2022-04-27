@@ -22,13 +22,35 @@ header{
 div{
     display: flex; 
 }
-#visitant{
-    margin: 15px;
-    justify-content: space-around;
-    background-color: white;
+
+#recursos{
+    margin-top: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px;
     border-radius: 10%;
-    box-shadow: 2px 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgba(196, 245, 245, 0.411);
+
+}
+#visitant{
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+    border-radius: 15%;
+    background-color: beige;
     
+}
+#adicionar{
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
 #visit{
     width: 40px;
@@ -70,7 +92,7 @@ div{
    display: block; 
    border: solid;
    padding-left: 10px;
-   width: 100px;
+   width: 400px;
    border-color: rgba(0, 0, 0, 0.534);
 }
 footer{
