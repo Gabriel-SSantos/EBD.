@@ -14,7 +14,7 @@ header{
     background-color:rgba(166, 240, 215, 0.76);
 }
 
-#alunos{
+#seg{
     flex-direction: column;
     box-shadow: 2px 2px 2px;
     background-color: rgb(189, 189, 236);
