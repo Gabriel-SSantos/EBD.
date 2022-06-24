@@ -102,6 +102,9 @@ function pontuar(i){
 let perguntas = []
 function salvar(){
     localStorage.quest = JSON.stringify(q)
+    quest = document.getElementById('quest')
+    quest.innerHTML = ""
+    alert('Salvamento concluído com sucesso!')
 }
 let sort = true
 function sortearquiz(){
