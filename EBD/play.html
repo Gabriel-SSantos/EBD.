@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <link rel="stylesheet" href="styleplay.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+</head>
+<body>
+    <h1>Playground</h1>
+    
+        <div onclick="cronometro()" id="botaocronometro">Temporizador</div>
+        <div onclick="sorteio()" id="botaosorteioaluno">Sortear aluno</div>
+       <!-- <div onclick="grupos()" id="botaogrupos">Grupos</div>-->
+       <div id="quiz">
+            <button onclick="quiz()" id="botaoquiz">Quiz</button> 
+            <div id="quizconfi">
+                <input type="text" id="inserir" value="texto">
+                <input type="button" class="bot" onclick="add()">
+                <input type="button" onclick="salvar()" value="Salvar">
+                <input type="button" onclick="sortearquiz()" value="Sortear">
+                
+            </div>
+            <article id="quest"></article>
+        </div>
+        <div onclick="sortearquiz()"  id="sorteioquiz">Sortear Quiz</div>
+        </div>
+    <div id="playground">
+        <div id="relogio">
+            <p id="temp"> 00:00:00 </p>
+            <div id="botaoreologio">
+                <input type="button" value="Começar" onclick="start()">
+                <input type="button" value="Parar" onclick="stop()">
+                <input type="button" value="Reiniciar" onclick="restart()">
+            </div>
+        </div>
+        
+        
+            <!--
+            <div id="config">
+            <p>Quantos Grupos?</p>
+            <input type="number" id="grupqtd">
+            <input type="button" value="Criar" class="bot" onclick="criagrupos()">
+            </div>-->
+        <div id="pessoas">
+            <div id="sorteio">
+                <input type="button" class="bot" onclick="escolher()">
+                <p></p>
+                <img src="seletor.png">
+            </div>
+            <div id="grupos">    
+                <div class="caixgrup" id="grup0">
+                    <h2>Nome do grupo</h2>
+                    <div>
+                        <p class="pontos">Pontuação do grupo: </p>
+                        <input type="button" value="Pontuar" onclick="pontuar(0)" id="botaogrupo1">
+                    </div>
+                </div>
+                <div class="caixgrup" id="grup1">
+                    <h2>Nome do grupo</h2>
+                    <div>
+                        <p class="pontos">Pontuação do grupo: </p>
+                        <input type="button" value="Pontuar" onclick="pontuar(1)" id="botaogrupo1">
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <button onclick="gerarpdf()">
+            <img src="" alt="Vai ter alguma coisa aqui">
+        </button>
+        <div id="inicio"></div>
+    </div>
+
+</body>
+
+<script src="página.js"></script>
+<script src="cronometro.js"></script>
+<script src="play.js"></script>
+</html>
