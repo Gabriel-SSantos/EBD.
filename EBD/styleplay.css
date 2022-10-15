@@ -1,8 +1,8 @@
 body{
-    display: flex;
+    position: relative;
+    width: 360px;
+    height: 725px;
     background-color: #A7CCF8;
-    text-align: center;
-    flex-direction: column;
 }
 h1{
     height: 84px;
