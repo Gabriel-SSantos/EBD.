@@ -184,7 +184,7 @@ function gerarpdf(){
     doc.setFontSize(12)
     doc.text("Perguntas: ", 20, 38)
     doc.setFontType('normal')
-    doc.text(JSON.parse(localStorage.getItem('quest')),23, 45)
+    doc.text(JSON.parse(localStorage.getItem('quest')),22, 45)
     doc.setFontType('bold')
     doc.text("Grupos: ", 20, 80)
     //doc.rect(20, 50, 10, 10)
