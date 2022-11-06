@@ -97,7 +97,7 @@ function add(){
    for(i = 0; i < q.length; i++){
     quest.innerHTML += `<p class="pergunta">${q[i]}</p>`
    }
-   px += 50
+   px += 70
    let pessoas = document.getElementById("pessoas")   
    pessoas.style.top = `${px}px` 
 }
@@ -134,7 +134,7 @@ function sortearquiz(){
         //quest.innerHTML += `<p class="pergunta">${perguntas[e]}</p>`    
         perguntas.splice(e,1) 
         let pessoas = document.getElementById("pessoas")  
-        px += 50 
+        px += 70 
         pessoas.style.top = `${px}px`
     }
 }
