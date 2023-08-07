@@ -31,7 +31,7 @@ function crianças(){
     criar(alun,turmas)
 }
 function jovens(){
-    aluno = ['Stella', 'Matheus','Luan','Lucas','Samuel','Carmem','Fernanda','Karine','wingredy','Alana','Vinicius','felipe','Loyde','Ana','Gustavo','Milena','Karol']
+    aluno = ['Stella','Fernanda','Wingredy','Alana','Vinicius','Felipe','Filipe','Carmen','Jefferson','Luís','Wanderson','Joao Wesley','Catarina']
     criar(alun,turmas)
 }
 function mulheres(){
